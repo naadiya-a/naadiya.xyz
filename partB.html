@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Part B</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-image: url("https://cdn.glitch.com/d95dc632-d4b1-44c2-b652-183235fff858%2FUntitled%20design%20(6).png?v=1564034223532");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    <script>
+      function showText(id,delay){
+        var elem=document.getElementById(id);
+        setTimeout(function(){elem.style.visibility='visible';},delay*1000)
+      }
+      window.onload=function(){
+        showText('line1',1.25);
+        showText('line2',2.5);
+        showText('line3',3.75);
+      }
+    </script>
+  </head>  
+  <body>
+    <p id = "line1"
+       style = "visibility:hidden;
+                font-family: 'Merienda', cursive;
+                font-style:italic;
+                font-size:40px;
+                color:#ffffff;
+                position:absolute;
+                top:50px; 
+                left:625px;">
+      You're young, 
+    </p>
+    <p id = "line2"
+       style = "visibility:hidden;
+                font-family: 'Merienda', cursive;
+                font-style:italic;
+                font-size:40px;
+                color:#ffffff;
+                position:absolute;
+                top:107px; 
+                left:850px;">
+      alive,
+    </p>
+    <p id = "line3"
+       style = "visibility:hidden;
+                font-family: 'Merienda', cursive;
+                font-style:italic;
+                font-size:40px;
+                color:#ffffff;
+                position:absolute;
+                top:155px; 
+                left:910px;">
+      and beautiful
+    </p>
+    <p id="projectid">
+			Part B of Z
+		</p>
+  </body>
+</html>
