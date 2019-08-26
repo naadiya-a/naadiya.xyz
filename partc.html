@@ -24,6 +24,22 @@
             text-transform: uppercase;
             letter-spacing: 3px;
             }
+        .month .prev {
+            float: left;
+            padding-left: 20px;
+            color: white;
+            background: #b3b3ff;
+            border: none;
+            font-size: 24px;
+            }
+        .month .next {
+            float: right;
+            padding-right: 20px;
+            color: white;
+            background: #b3b3ff;
+            border: none;
+            font-size: 24px;
+            }
         .weekdays {
             margin: 0;
             padding: 10px 0;
@@ -33,7 +49,7 @@
         .weekdays li {
             display: inline-block;
             width: 13.6%;
-            color: #666;
+            color: #666666;
             text-align: center;
             }
         .days {
@@ -48,7 +64,7 @@
             text-align: center;
             margin-bottom: 5px;
             font-size: 14px;
-            color: #777;
+            color: #777777;
             padding-left: 4px;
             }
         .days li .active {
@@ -73,9 +89,20 @@
     </style>
   </head>
   <body>
-    <h1 id="year"></h1>
+    <h1 id="year"
+        style = "color: #666666;
+                 font-size: 24px;">
+    </h1>
     <div class="month">
       <ul>
+        <button class="prev"
+                onclick="previous()">
+          &#10094
+        </button>
+        <button class="next"
+                onclick="next()">
+          &#10095
+        </button>
         <li id="month"></li>
       </ul>
     </div>
@@ -89,54 +116,89 @@
       <li>Sa</li>
     </ul>
     <ul class="days" id="daysList"></ul>
-    <p id="projectid">
-	    Part C of Z
-    </p>
+    <p id="projectid">Part C of Z</p>
   </body>
   <script> 
+    let daysContainer = document.getElementById("daysList");
+    let monthContainer = document.getElementById("month");
+    let yearContainer = document.getElementById("year");
+    
     let currentDate = new Date();
     let currentMonth = currentDate.getMonth();
     let currentYear = currentDate.getFullYear();
     
-    let lastDayOfCurrentMonth = new Date(currentYear, currentMonth + 1, 0);
-    let numberOfDaysInCurrentMonth = lastDayOfCurrentMonth.getDate();
-    
-    let firstDayOfCurrentMonth = new Date(currentYear, currentMonth, 1);
-    let dayOfWeekForFirst = firstDayOfCurrentMonth.getDay();
-        
-    let daysContainer = document.getElementById("daysList")
-    
-    for (let i = 0; i < dayOfWeekForFirst; i++) {
-      var listElement = document.createElement("li");
-      daysContainer.appendChild(listElement)
+    function clearCalendar() {
+      daysContainer.innerHTML = "";
+      monthContainer.innerHTML = "";
+      yearContainer.innerHTML = "";
     }
     
-    for (let date = 1; date <= numberOfDaysInCurrentMonth; date++) {
-      var listElement = document.createElement("li");
-      var content = document.createTextNode(date);
-      listElement.appendChild(content);
-      
-      if (date == currentDate.getDate()) {
-        var spanElement = document.createElement('span');
-        spanElement.classList.add("active")
-        spanElement.appendChild(content)
-        listElement.appendChild(spanElement);
+    function populateCalendar(currentDate) {
+      let lastDayOfCurrentMonth = new Date(currentYear, currentMonth + 1, 0);
+      let numberOfDaysInCurrentMonth = lastDayOfCurrentMonth.getDate();
+    
+      let firstDayOfCurrentMonth = new Date(currentYear, currentMonth, 1);
+      let dayOfWeekForFirst = firstDayOfCurrentMonth.getDay();
+    
+      for (let i = 0; i < dayOfWeekForFirst; i++) {
+        var listElement = document.createElement("li");
+        daysContainer.appendChild(listElement)
       }
-      else {
-      listElement.appendChild(content)
-      }
+    
+      for (let date = 1; date <= numberOfDaysInCurrentMonth; date++) {
+        var listElement = document.createElement("li");
+        var content = document.createTextNode(date);
+        listElement.appendChild(content);
       
-      daysContainer.appendChild(listElement)
+        if (date == currentDate.getDate()) {
+          var spanElement = document.createElement('span');
+          spanElement.classList.add("active")
+          spanElement.appendChild(content)
+          listElement.appendChild(spanElement);
+        }
+        else {
+          listElement.appendChild(content)
+        }
+      
+        daysContainer.appendChild(listElement)
+      }
+    
+      yearContainer.appendChild(document.createTextNode(currentYear));
+    
+      const monthNames = ["January", "February", "March", "April", "May", "June", "July", 
+			  "August", "September", "October", "November", "December"];
+    
+      monthContainer.appendChild(document.createTextNode(monthNames[currentMonth]))
     }
     
-    let yearContainer = document.getElementById("year");
-    yearContainer.appendChild(document.createTextNode(currentYear));
+    function previous() {      
+      clearCalendar();
+      
+      if (currentMonth > 0) {
+        currentMonth -= 1;
+      } else {
+        currentMonth = 11;
+        currentYear -= 1;
+      }
+      
+      currentDate = new Date(currentYear, currentMonth);
+      populateCalendar(currentDate);
+    }
     
-    const monthNames = ["January", "February", "March", "April",
-                        "May", "June", "July", "August", 
-                        "September", "October", "November", "December"];
+    function next() {
+      clearCalendar();
+      
+      if (currentMonth < 11) {
+        currentMonth += 1;
+      } else {
+        currentMonth = 0;
+        currentYear +=1;
+      }
+      
+      currentDate = new Date(currentYear, currentMonth);
+      populateCalendar(currentDate);
+    }
     
-    let monthContainer = document.getElementById("month")
-    monthContainer.appendChild(document.createTextNode(monthNames[currentMonth]))    
+    populateCalendar(currentDate);
   </script>
 </html>
