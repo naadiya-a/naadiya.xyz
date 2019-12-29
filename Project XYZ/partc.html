@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Part C</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <style>
+    ul {
+      list-style-type: none;
+    }
+
+    body {
+      font-family: Helvetica, "Trebuchet MS", sans-serif;
+      box-sizing: border-box;
+    }
+
+    .month {
+      padding: 70px 0;
+      width: 100%;
+      background: #b3b3ff;
+      text-align: center;
+    }
+
+    .month ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .month ul li {
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .month .prev {
+      float: left;
+      padding-left: 20px;
+      color: white;
+      background: #b3b3ff;
+      border: none;
+      font-size: 24px;
+    }
+
+    .month .next {
+      float: right;
+      padding-right: 20px;
+      color: white;
+      background: #b3b3ff;
+      border: none;
+      font-size: 24px;
+    }
+
+    .weekdays {
+      margin: 0;
+      padding: 10px 0;
+      padding-left: 2px;
+      background-color: #ddd;
+    }
+
+    .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      color: #666666;
+      text-align: center;
+    }
+
+    .days {
+      padding: 10px 0px;
+      background-color: #eee;
+      margin: 0;
+    }
+
+    .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #777777;
+      padding-left: 4px;
+    }
+
+    .days li .active {
+      padding: 5px;
+      background: #b3b3ff;
+      color: white !important
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="year" style="color: #666666;
+                 font-size: 24px;">
+  </h1>
+  <div class="month">
+    <ul>
+      <button class="prev" onclick="previous()">
+        &#10094
+      </button>
+      <button class="next" onclick="next()">
+        &#10095
+      </button>
+      <li id="month"></li>
+    </ul>
+  </div>
+  <ul class="weekdays">
+    <li>Su</li>
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+  </ul>
+  <ul class="days" id="daysList"></ul>
+  <p id="projectid">Part C of Z</p>
+</body>
+<script src="js\partc.js"></script>
+
+</html>
