@@ -20,6 +20,7 @@
 nav ul {
   font-family: "Raleway", sans-serif;
   margin: 2em;
+  margin-bottom: 0.75em;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
