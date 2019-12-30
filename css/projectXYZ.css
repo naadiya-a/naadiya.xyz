@@ -1,0 +1,38 @@
+#projectid {
+  font-family:trebuchet ms;
+  font-size:16px;
+  color:#000000;
+  margin-top:3em;
+  position:absolute;
+  bottom:1px;
+  right:3px;
+}
+  
+.projectlink {
+  font-family:trebuchet ms;
+  font-size:24px;
+  text-align:left;
+  color:#000000;
+  display:block;
+  margin-top:0.5em;
+}
+
+nav ul {
+  font-family: "Raleway", sans-serif;
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 14px;
+}
+  
+nav li {
+  padding: 10px 15px;
+}
+
+nav a {
+  color: #595959;
+  text-decoration: none;
+  text-transform: uppercase;
+}
