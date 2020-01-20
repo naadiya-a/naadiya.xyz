@@ -81,3 +81,34 @@ img {
   background: black;
   color: white;
 }
+
+@media (max-width: 500px) {
+  body {
+    margin: 1em;
+  }
+  h1 {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 1.0em;
+    margin-top: 1.0em;
+  }
+  nav ul {
+    font-size: 12px;
+  }
+  nav li {
+    padding: 5px 10px;
+  }
+  .box {
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+  }
+  img {
+    max-width: 90%;
+    display: block;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25em;
+  }
+}
