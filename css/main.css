@@ -43,6 +43,10 @@ nav a {
   text-transform: uppercase;
 }
 
+nav a:hover {
+  color: black;
+}
+
 img {
   border-radius: 50%;
   max-width: 45%;
