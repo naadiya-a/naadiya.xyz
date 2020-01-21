@@ -81,7 +81,7 @@ img {
   color: white;
 }
 
-@media (max-device-width: 812px) and (orientation: portrait), (max-width: 500px) {
+@media (max-device-width: 812px) and (orientation: portrait), (max-width: 650px) {
   body {
     margin: 1em;
   }
@@ -92,14 +92,14 @@ img {
     margin-top: 1.0em;
   }
   nav ul {
-    font-size: 12px;
+    font-size: 0.75em;
   }
   nav li {
-    padding: 5px 10px;
+    padding: 0.3em 0.65em;
   }
   .box {
     display: inline-block;
-    font-size: 15px;
+    font-size: 0.95em;
     text-align: center;
   }
   img {
