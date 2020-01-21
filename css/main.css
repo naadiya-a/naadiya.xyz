@@ -81,7 +81,7 @@ img {
   color: white;
 }
 
-@media (max-device-width: 812px) and (orientation: landscape) {
+@media (max-device-width: 812px) and (orientation: portrait) {
   body {
     margin: 1em;
   }
