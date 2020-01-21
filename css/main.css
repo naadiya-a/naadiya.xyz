@@ -53,7 +53,7 @@ img {
   filter: brightness(105%);
 }
 
-@media (max-device-width: 812px) and (orientation: portrait), (max-width: 650px) {
+@media (max-width: 812px) and (orientation: portrait){
   body {
     margin: 1em;
   }
