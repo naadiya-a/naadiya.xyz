@@ -56,7 +56,6 @@ img {
 @media (max-device-width: 812px) and (orientation: portrait), (max-width: 650px) {
   body {
     margin: 1em;
-    font-size: 100%;
   }
   h1 {
     text-align: center;
