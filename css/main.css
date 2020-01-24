@@ -53,6 +53,28 @@ img {
   filter: brightness(105%);
 }
 
+.fa {
+  padding: 0.5em;
+  font-size: 250%;
+  width: 1em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+}
+.fa:hover {
+  opacity: 0.75;
+}
+.fa-linkedin {
+  background: #0E76A8;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+
 @media (max-width: 812px) and (orientation: portrait){
   body {
     margin: 1em;
@@ -81,5 +103,16 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.25em;
+  }
+  .fa {
+    margin-left: 0;
+  }
+  .fa-linkedin {
+    margin-right: 0.5em;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
