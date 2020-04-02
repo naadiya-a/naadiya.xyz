@@ -53,9 +53,16 @@ img {
   filter: brightness(105%);
 }
 
+.text {
+  text-align: left;
+  margin-left: 1.25em;
+  margin-bottom: 2em;
+  margin-top: 2.5em;
+}
+
 .fa {
   padding: 0.5em;
-  font-size: 250%;
+  font-size: 175%;
   width: 1em;
   text-align: center;
   text-decoration: none;
@@ -103,6 +110,12 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.25em;
+  }
+  .text {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 1.5em;
+    margin-top: 2.25em;
   }
   .fa {
     margin-left: 0;
