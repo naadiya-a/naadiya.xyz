@@ -70,19 +70,22 @@ img {
   margin-left: 0.5em;
   margin-bottom: 1em;
 }
+
 .fa:hover {
   opacity: 0.8;
 }
+
 .fa-linkedin {
   background: #0E76A8;
   color: white;
 }
+
 .fa-github {
   background: black;
   color: white;
 }
 
-@media (max-width: 812px) and (orientation: portrait){
+@media (max-width: 812px) and (orientation: portrait) {
   body {
     margin: 1em;
   }
@@ -100,7 +103,6 @@ img {
   }
   .box {
     display: inline-block;
-/*     font-size: 0.95em; */
     text-align: center;
   }
   img {
