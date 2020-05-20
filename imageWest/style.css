@@ -1,0 +1,107 @@
+body {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    background: #f5ffff;
+  }
+  
+  .nav-link {
+    font-color: white;
+    padding: 1px;
+  }
+  
+  nav a {
+    color: white !important;
+  }
+  
+  nav a:hover {
+    color: #33e7ff !important;
+  }
+  
+  .navbar-brand {
+    margin: 0;
+  }
+  
+  #header-img {
+    max-width: 65%;
+    padding: 0.25em;
+  }
+  
+  .fa {
+    padding: 0.6em;
+    font-size: 200%;
+    width: 2.25em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 1em;
+    background: black;
+    color: white;
+  }
+  
+  .fa:hover {
+    opacity: 0.6;
+    color: white;
+  }
+  
+  #footer {
+    color: white;
+    font-size: 80%;
+    padding: 0.8em 1.25em;
+    line-height: 1.2;
+  }
+  
+  #company {
+    font-size: 115%;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .horizontal {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .capitalize {
+    text-transform: uppercase;
+  }
+  
+  #map {
+    padding: 0.75em 0;
+  }
+  
+  #model-img {
+    max-width: 100%;
+    width: 45%;
+    height: auto;
+  }
+  
+  #home-content {
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  #home-text {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  
+  #price-body {
+    margin: 0 0.25em;
+  }
+  
+  .prices {
+    margin: 0;
+    margin-top: 0.75em;
+  }
+  
+  .deva-text {
+    margin: 0 2em;
+    margin-bottom: 2em;
+    font-size: 90%;
+  }
+  
