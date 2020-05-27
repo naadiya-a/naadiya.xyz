@@ -107,7 +107,7 @@ nav a:hover {
 }
 
 .project-link:hover {
-  font-weight: bold;
+  font-size: 105%;
   color: black;
 }
 
