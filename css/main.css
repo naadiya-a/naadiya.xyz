@@ -44,7 +44,7 @@ nav a:hover {
   color: #000000;
 }
 
-img {
+#profile-img {
   border-radius: 50%;
   max-width: 45%;
   height: auto;
@@ -96,7 +96,7 @@ img {
   margin-bottom: 1em;
 }
 
-.thumb-image {
+.thumb-img {
   width: 55%;
   border: 0.75px solid #595959;
 }
