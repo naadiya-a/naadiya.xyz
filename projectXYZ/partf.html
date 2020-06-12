@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Part F</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"/>
+    <link rel="stylesheet" href="css\partf.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js\partf.js" defer></script>
+  </head>
+  <body>
+    <h1>Curly Hair Quiz</h1>
+    <div id="quizArea" class="horizontal col-8">
+        <form id="quiz">
+          <!--       Question 1 -->
+          <h3>Hair type:</h3>
+          <label><input type="radio" name="type" id="1.1" value="1" /> Wavy</label><br />
+          <label><input type="radio" name="type" id="1.2" value="2" /> Curly</label><br />
+          <label><input type="radio" name="type" id="1.3" value="3" /> Kinky</label><br />
+          <!--       Question 2 -->
+          <h3>Biggest hair problem:</h3>
+          <label><input type="radio" name="problem" id="2.1" value="10" /> Frizz</label><br />
+          <label><input type="radio" name="problem" id="2.2" value="20" /> Damage</label><br />
+          <label><input type="radio" name="problem" id="2.3" value="30" /> Hold</label><br />
+          <!--       Question 3 -->
+          <h3>
+            Porosity: 
+            <a class="fa fa-question-circle" style="font-size:12px" data-toggle="tooltip" 
+               title="Porosity is your hair's ability to absorb and retain moisture. To determine your 
+               porosity, drop a strand of clean hair into a glass of water and wait 5-10 minutes. If 
+               the strand floats on top, it is low porosity. If the strand floats somewhere in the 
+               middle, it is normal porosity. If the strand sinks to the bottom, it is high porosity.">
+            </a>
+          </h3>
+          <label><input type="radio" name="porosity" id="3.1" /> Low</label><br />
+          <label><input type="radio" name="porosity" id="3.2" /> Normal</label><br />
+          <label><input type="radio" name="porosity" id="3.3" /> High</label><br />
+          
+          <button type="submit" id="button">Submit</button>
+        </form>
+      </div>
+    </body>
+  </html>
+  
