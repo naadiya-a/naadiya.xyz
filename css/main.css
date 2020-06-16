@@ -1,17 +1,15 @@
 body {
   font-family: "Raleway", sans-serif;
-  margin: 2em;
+  margin: 1.25em;
   font-size: 16px;
 }
 
 h1 {
   font-weight: normal;
   font-size: 125%;
-  /* color: black; */
   text-transform: uppercase;
   letter-spacing: 0.1em;
   word-spacing: 0.25em;
-  /* margin-bottom: 1.75em; */
   margin-bottom: 1.5em;
   margin-left: 1.25em;
 }
@@ -50,9 +48,6 @@ nav a:hover {
   border-radius: 50%;
   max-width: 100%;
   border: 0.5px solid #e6e6e6;
-  /* height: auto;
-  vertical-align: middle; */
-  /* padding-right: 5%; */
   filter: brightness(105%);
   margin-bottom: 0.25em;
 }
