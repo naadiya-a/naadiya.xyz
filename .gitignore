@@ -1,3 +1,5 @@
 .vscode/launch.json
 yarn.lock
 node_modules
+projectXYZ\shake.js
+package.json
