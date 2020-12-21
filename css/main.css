@@ -4,6 +4,15 @@ body {
   font-size: 16px;
 }
 
+#projects {
+  margin-top: 5em;
+}
+
+#contact {
+  margin-top: 4em;
+  margin-right: 0.95em;
+}
+
 h1 {
   font-weight: normal;
   font-size: 125%;
@@ -14,20 +23,11 @@ h1 {
   margin-left: 1.25em;
 }
 
-/* .box {
-  display: flex;
-  align-items: center;
-  font-weight: normal;
-  line-height: 1.4;
-  color: black;
-} */
-
 nav ul {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
   font-size: 85%;
-  /* margin-bottom: 0em; */
 }
 
 nav li {
@@ -60,9 +60,9 @@ nav a:hover {
 }
 
 .fa {
-  padding: 0.5em;
+  padding: 0.75em;
   font-size: 175%;
-  width: 1em;
+  width: 2.5em;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -71,7 +71,9 @@ nav a:hover {
 }
 
 .fa:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  text-decoration: none;
+  color: white;
 }
 
 .fa-linkedin {
@@ -109,50 +111,3 @@ nav a:hover {
   font-size: 105%;
   color: black;
 }
-
-/* @media (max-width: 812px) and (orientation: portrait) {
-  body {
-    margin: 1em;
-  }
-  h1 {
-    text-align: center;
-    margin-left: 0;
-    margin-bottom: 1.0em;
-    margin-top: 1.0em;
-  }
-  nav ul {
-    font-size: 75%;
-  }
-  nav li {
-    padding: 0.3em 0.65em;
-  }
-  .box {
-    display: inline-block;
-    text-align: center;
-  }
-  img {
-    max-width: 90%;
-    display: block;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.25em;
-  }
-  .text {
-    text-align: center;
-    margin-left: 0;
-    margin-bottom: 1.5em;
-    margin-top: 2.25em;
-  }
-  .fa {
-    margin-left: 0;
-  }
-  .fa-linkedin {
-    margin-right: 0.5em;
-  }
-  .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-} */

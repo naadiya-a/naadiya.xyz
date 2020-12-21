@@ -2,13 +2,14 @@
 <html>
 
 <head>
-  <title>Naadiya Ahmedabadi | About</title>
+  <title>Naadiya Ahmedabadi</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap" />
-  <link rel="stylesheet" href="css\main.css" />
+  <link rel="stylesheet" href="new.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -23,23 +24,52 @@
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <h1>Naadiya Ahmedabadi</h1>
-  <div class="row">
-    <div class="col-md-6">
-      <img id="profile-img" src="img\IMG_5706.JPG" />
-    </div>
-    <div class="col-md-5 my-auto text-center ml-auto mr-auto">
+  <section id="about">
+    <h1>Naadiya Ahmedabadi</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <img id="profile-img" src="img\IMG_5706.JPG" />
+      </div>
+      <div class="col-md-5 my-auto text-center ml-auto mr-auto">
       I have a BSc in Cognitive Systems, specializing in the Cognition and Brain stream. Throughout my 
       degree, I have assessed the social and ethical implications of various applications of 
       artificial intelligence. I have also studied the mechanisms of human cognition and conducted 
       research regarding stress. Currently, I am working towards my second BSc in Computer Science.
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+    <div class="row col-10 horizontal" style="padding: 0">
+      <div class="col-md-6 text-center thumbnail">
+        <a class="project-link" href="projectXYZ\index.html">
+          <img class="thumb-img" src="img\projXYZ.png">
+          <br>
+          Project XYZ
+        </a>
+      </div>
+      <div class="col-md-6 text-center thumbnail">
+        <a class="project-link" href="imageWest\index.html">
+          <img class="thumb-img" src="img\imageWest.png">
+          <br>
+          Image West Salon
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="social float-right">
+        <a href="https://www.linkedin.com/in/naadiya-ahmedabadi/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/naadiya-a" class="fa fa-github"></a>
+    </div>
+  </section>
+  
 </body>
 
 </html>
