@@ -86,6 +86,11 @@ nav a:hover {
   color: white;
 }
 
+.fa-file {
+  background: darkblue;
+  color: white;
+}
+
 .horizontal {
   display: flex;
   justify-content: center;
