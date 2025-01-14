@@ -2,3 +2,19 @@
     max-width: 40vw;
     height: auto;
 } 
+  
+.project-name {
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+  
+.project-link:hover .project-name {
+    transform: scale(1.2);
+}
+  
+.project-description {
+    font-size: 0.9rem; 
+    margin-top: 0.5rem;
+    color: #2e2e2e;
+}
