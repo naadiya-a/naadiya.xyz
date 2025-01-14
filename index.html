@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap" />
   <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.css" />
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -22,30 +23,25 @@
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
   <section id="about">
-    <h1>Naadiya Ahmedabadi</h1>
+    <div class="d-flex justify-content-between align-items-center">
+      <h1 class="ml-0">Naadiya Ahmedabadi</h1>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/naadiya-ahmedabadi/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/naadiya-a" class="fa fa-github"></a>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-md-6">
-        <img id="profile-img" src="images/IMG_5706.JPG" />
+      <div class="col-md-6 py-4 text-center">
+        <img id="profile-img" src="images/portrait.jpeg" />
       </div>
       <div class="col-md-5 my-auto text-center ml-auto mr-auto">
         <p>
-          I am currently enrolled in the Bachelor of Computer Science program at UBC. Previously, I obtained a
-          BSc in Cognitive Systems, specializing in the Cognition and Brain stream. Throughout my 
-          degree, I assessed the social and ethical implications of various applications of 
-          artificial intelligence. I have also studied the mechanisms of human cognition and conducted 
-          research regarding stress as a research assistant in a psychology lab.
+          I’m a software engineer on the Platform team at Copperleaf. 
+          Previously, I interned at Meta and Copperleaf.
         </p>
         <p>
-          During this time, I also took some computer science courses and discovered how much I loved them, 
-          which led me to pursure my current degree. Check out some of my projects below!
+          Check out my projects below!
         </p>
       </div>
     </div>
@@ -55,37 +51,21 @@
     <h1>Projects</h1>
     <div class="row col-10 horizontal" style="padding: 0">
       <div class="col-md-4 text-center thumbnail">
-        <a class="project-link" href="https://github.com/naadiya-a/loom-and-stitch">
-          <img class="thumb-img" src="images/loomAndStitch.png">
+        <a class="project-link" href="https://loomandstitch.com">
+          <img class="thumb-img" src="images/loom-and-stitch.png">
           <br>
           Loom & Stitch
         </a>
       </div>
       <div class="col-md-4 text-center thumbnail">
-        <a class="project-link" href="imageWest\index.html">
-          <img class="thumb-img" src="images/imageWest.png">
+        <a class="project-link" href="https://isgood.recipes">
+          <img class="thumb-img" src="images/is-good.png">
           <br>
-          Image West Salon
-        </a>
-      </div>
-      <div class="col-md-4 text-center thumbnail">
-        <a class="project-link" href="projectXYZ\index.html">
-          <img class="thumb-img" src="images/projXYZ.png">
-          <br>
-          Project XYZ
+          Is Good Recipes
         </a>
       </div>
     </div>
   </section>
-  <section id="contact">
-    <div class="social float-right">
-      <!-- <a href="#" class="fa fa-file-text"></a> -->
-      <a href="NaadiyaAhmedabadi_Resume.pdf" class="fa fa-file"></a>
-      <a href="https://www.linkedin.com/in/naadiya-ahmedabadi/" class="fa fa-linkedin"></a>
-      <a href="https://github.com/naadiya-a" class="fa fa-github"></a>
-    </div>
-  </section>
-  
 </body>
 
 </html>
