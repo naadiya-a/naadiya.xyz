@@ -18,3 +18,9 @@
     margin-top: 0.5rem;
     color: #2e2e2e;
 }
+
+@media (max-width: 770px) {
+    h1 {
+      margin-left: 0;
+    }
+}
